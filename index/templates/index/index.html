@@ -24,6 +24,8 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href={% url 'index' %}>Home</a></li>
                         <li class="nav-item"><a class="nav-link" href={% url 'about' %}>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href={% url 'videojuego' %}>Videojuegos</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#'>Buscar Videojuego</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +37,9 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <div class="text-center my-5">
-                            <h1 class="display-5 fw-bolder text-white mb-2">¡Bienvenidos a mi Blog!</h1>
+                            {% block header_text_block %}
+                                <h1 class="display-5 fw-bolder text-white mb-2">¡Bienvenidos a mi Blog!</h1>
+                            {% endblock header_text_block %}
                             <p class="lead text-white-50 mb-4">Blog sobre los mejores videojuegos y mejores películas de todos los temas, y más</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                             </div>
