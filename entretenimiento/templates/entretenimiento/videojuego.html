@@ -5,11 +5,16 @@
 {% endblock header_text_block %}
 
 {% block body_block %}
+
     <ul>
         <li>
             <a href={% url 'crear_videojuego' %}>¡Ingresa tu videojuego favorito!</a>
         </li>
+        <li>
+            <a href={% url 'lista_videojuegos' %}>¡Busca un videojuego!</a>
+        </li>
     </ul>
+
 {% endblock body_block %}
 
 
