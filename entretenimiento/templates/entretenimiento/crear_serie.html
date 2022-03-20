@@ -1,8 +1,23 @@
 {% extends 'index/index.html' %}
 
-{% block header_text_block %}
-    <h1 class="display-5 fw-bolder text-white mb-2">¡CREAR SERIE!</h1>
-{% endblock header_text_block %}
+{% block header_block %}
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            {% block header_text_block %}
+                                <h1 class="display-5 fw-bolder text-white mb-2">AGREGA UNA SERIE</h1>
+                            {% endblock header_text_block %}
+                            <p class="lead text-white-50 mb-4">Agrega la serie que más te guste y recomiendes a la comunidad</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+{% endblock header_block %}
 
 {% block body_block %}
 
