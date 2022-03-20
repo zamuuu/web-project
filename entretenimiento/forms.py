@@ -10,7 +10,7 @@ class PeliculasForm(forms.Form):
     categoria = forms.CharField(max_length=20)
     divertida = forms.BooleanField(required=False)
 
-# class SeriesForm(forms.Form):
-#     nombre = forms.CharField(max_length=30)
-#     categoria = forms.CharField(max_length=20)
-#     divertida = forms.BooleanField(required=False)
+class SeriesForm(forms.Form):
+    nombre = forms.CharField(max_length=30)
+    categoria = forms.CharField(max_length=20)
+    divertida = forms.BooleanField(required=False)

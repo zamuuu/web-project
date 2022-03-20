@@ -6,5 +6,7 @@ urlpatterns = [
     path('videojuegos/crear',views.crear_videojuego, name='crear_videojuego'),
     path('pelicula/', views.pelicula, name='pelicula'),
     path('peliculas/crear', views.crear_pelicula, name='crear_pelicula'),
+    path('serie/', views.serie, name='serie'),
+    path('series/crear', views.crear_serie, name='crear_serie'),
     # path('',, name='buscar_videojuego'),
 ]

@@ -1,0 +1,13 @@
+{% extends 'index/index.html' %}
+
+{% block header_text_block %}
+        <h1 class="display-5 fw-bolder text-white mb-2">SERIES</h1>
+{% endblock header_text_block %}
+
+{% block body_block %}
+    <ul>
+        <li>
+            <a href={% url 'crear_serie' %}>¡Ingresa tu serie favorita!</a>
+        </li>
+    </ul>
+{% endblock body_block %}
