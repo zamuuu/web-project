@@ -31,7 +31,6 @@
     </form>
     
     {% for videojuego in videojuegos %}
-        <li>{{videojuego}}</li>
+        <li>{{videojuego}} | {{videojuego.genero}}</li>
     {% endfor %}
-
 {% endblock body_block %}
