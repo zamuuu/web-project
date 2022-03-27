@@ -21,19 +21,14 @@
 {% endblock header_block %}
 
 {% block body_block %}
-    <h2>
-        {{nombre}}
-    </h2>
-
-    {% if nombre == apellido %}
-        <h3>{{apellido}}</h3>
-    {% endif %}
-
-    {% for valor in lista %}
-        <li>
-            {{valor}}
-        </li>
-    {% endfor %}
+<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #212529;"></path></svg></div>
+<div style='padding: 3rem' class="row gx-5">
+    <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-person-fill"></i></div>
+        <h2 class="h4 fw-bolder">Sobre mi</h2>
+        <p>Soy un chico de 15 años que vive actualmente en Argentina. A los 11-12 años ya estaba muy interesado por el mundo de la tecnologia. En este ambito siempre lo que mas me intereso fue el software, ahi incluyendo la programacion y el pentesting. Actuelmente estoy aprendiendo python y el framework Django como primer lenguaje, una prueba de mi aprendizaje es esta página hecha con Django.</p>
+    </div>
+</div>
 {% endblock body_block %}
 
 

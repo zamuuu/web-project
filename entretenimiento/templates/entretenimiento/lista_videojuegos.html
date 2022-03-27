@@ -22,6 +22,9 @@
 
 {% block body_block %}
 
+    <p>
+        <a href={% url 'videojuego' %}>VOLVER</a>
+    </p>
     <form action={% url 'lista_videojuegos' %} method='get'>
         {% csrf_token %}
         <table>
